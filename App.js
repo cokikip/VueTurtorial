@@ -47,11 +47,18 @@ new Vue({
         subtractTen:function(){
             this.age-=10
         },
-        updateXY:function(){
-            console.log(event);
-            this.x=event.offsetX;
-            this.y=event.offsetY;
-            console.log(this.x+" "+this.y);
+        updateXY:function(event){
+            console.log(event)
+            this.x=event.offsetX
+            this.y=event.offsetY
+            console.log(this.x+" "+this.y)
+        },
+        logName:function(firstname){
+            console.log("firstname");
+
+        },
+        logAge:function(agenew){
+            console.log("agenew");
         }
     }
 

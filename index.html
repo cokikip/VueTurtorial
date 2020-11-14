@@ -34,6 +34,18 @@
             {{x}},  
             {{y}}
         </div>
+        <br><br>
+
+        <div id="canvas" @click.once="updateXY">
+            {{x}},  
+            {{y}}
+        </div>
+
+        <label for="Name">Name</label>
+        <input type="text" @keyup.enter="logName" name="name" id="name">
+        <br>
+        <label for="age">Age</label>
+        <input type="text" @keyup.alt.ctrl.enter="logAge" name="age" id="age">
 
     </div>
     <script src="App.js"></script>
