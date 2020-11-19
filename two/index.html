@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two components</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+</head>
+<body>
+    <h3>
+        Two reusable vue instanses
+    </h3>
+    <div id="myApp">
+        <p>{{name}}</p>
+        <greetings/>
+    </div>
+    <did id="myApp1">
+        <p>{{name}}</p>
+        <h4>{{app.name}}</h4>
+        <greetings/>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

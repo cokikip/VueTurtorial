@@ -47,6 +47,43 @@
         <label for="age">Age</label>
         <input type="text" @keyup.alt.ctrl.enter="logAge" name="age" id="age">
 
+        <div>
+            <h1>Conditionals(V-if and V-show)</h1>
+            <button @click="error=!error">Toggle Errors</button>
+            <button @click="success=!success">Toggle success</button>
+            <!--While using V-id  it does remove the element completely-->
+
+            <p v-if="error">There has been an error in the system</p>
+            <p v-else-if="success">We made it</p>
+
+
+            <!--While using V-show it does not remove the element completely but gives a style of none-->
+            <p v-show="error">There has been an error in the system</p>
+            <p v-show="success">We made it</p>
+
+        </div>
+        <div>
+            <h1>Looping through an Array</h1>
+            <ul>
+                <li v-for="(character,index) in characters">
+                    
+                    {{character}} is in {{index}}
+                </li>
+            </ul>
+
+            <ul v-for>
+                <li v-for="(course,index) in courses">
+                    {{course.name}} : {{course.grade}} is in {{index}}
+                </li>
+            </ul>
+
+            <template v-for="course in courses">
+                <div v-for="(value,key) in course">
+                    <p>{{key}} : {{value}}</p>
+                </div>
+
+            </template>
+        </div>
     </div>
     <script src="App.js"></script>
 </body>

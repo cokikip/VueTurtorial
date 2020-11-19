@@ -5,27 +5,32 @@ new Vue({
         age:25,
         website:"https://cokikip.github.io",
         websiteTarget:'<a href="https://cokikip.github.io">My Web page</a>',
+        //Array of objects
         courses:[
             {
                 name:"english",
-                grade:87
+                grade:97
             },
 
             {
                 name:"Maths",
-                grade:87
+                grade:77
             },
             {
                 name:"Kiswahili",
-                grade:87
+                grade:89
             },
             {
                 name:"Biology",
-                grade:87
+                grade:69
             },
         ],
+        //Array of strings
+        characters:["Luffy","Nami","Zoro","Chopa","Dragon","Ace"],
         x:0,
-        y:0
+        y:0,
+        error:false,
+        success:true
     },
     methods:{
         getName:function(data){
@@ -60,6 +65,9 @@ new Vue({
         logAge:function(agenew){
             console.log("agenew");
         }
+    },
+    computed:{
+        
     }
 
 });
