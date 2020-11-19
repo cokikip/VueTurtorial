@@ -1,4 +1,6 @@
 # VueTurtorial By NetNinja
+1. Lessons on vue parts and components.
+2. Punchbag game
 Sanity + Vue.js frontend example
 === 
 
